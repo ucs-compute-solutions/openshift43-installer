@@ -46,7 +46,7 @@ There is an example terraform.tfvars file in this directory named terraform.tfva
 * bootstrap_ignition_url
 * control_plane_ignition
 * compute_ignition
-The bootstrap ignition config must be placed in a location that will be accessible by the bootstrap machine. For example, you could store the bootstrap ignition config in a gist.
+The bootstrap ignition config must be placed in a location that will be accessible by the bootstrap machine. 
 
 4. Run `terraform init`.
 
