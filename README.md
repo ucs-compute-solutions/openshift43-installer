@@ -5,12 +5,13 @@ Terraform Installater for OpenShift Container Platform 4.3 on Cisco User Provisi
 # Pre-Requisites
 
 * Cisco Converged Infrastructure deployed per Cisco's design guidelines. 
-Refer to specific Converged Infrastructure CVD that you are intending to use as User Provisioned Infrastructure for OpenShift installation.
- https://www.cisco.com/c/en/us/solutions/design-zone.html
 * VMware Infrastructure deployed on Cisco Converged Infrastructiure
 * terraform 0.11
 
 # OCP 4.3 Cluster Installation 
+
+Refer to specific Converged Infrastructure CVD that you are intending to use as User Provisioned Infrastructure for OpenShift installation.
+ https://www.cisco.com/c/en/us/solutions/design-zone.html
 
 1. Create an install-config.yaml.
 
