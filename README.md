@@ -1,12 +1,15 @@
+# Terrafrom OpenShift Container Platform 4.3 Installater for Cisco UPI
+
+Terraform Installater for OpenShift COntainer Platform 4.3 on VMware deployed on Cisco User Provisioned Infrastructure 
+
 # Pre-Requisites
 
+* VMware Infrastructure deployed on Cisco Converged Infrastructiure
 * terraform
-* jq
 
-# Build a Cluster
+# OCP 4.3 Cluster Installation 
 
 1. Create an install-config.yaml.
-The machine CIDR for the dev cluster is 139.178.89.192/26.
 
 ```
 apiVersion: v1
