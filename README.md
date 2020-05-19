@@ -1,11 +1,14 @@
 # Terrafrom OpenShift Container Platform 4.3 Installater for Cisco UPI
 
-Terraform Installater for OpenShift COntainer Platform 4.3 on VMware deployed on Cisco User Provisioned Infrastructure 
+Terraform Installater for OpenShift Container Platform 4.3 on Cisco User Provisioned Infrastructure 
 
 # Pre-Requisites
 
+* Cisco Converged Infrastructure deployed per Cisco's design guidelines. 
+Refer to specific Converged Infrastructure CVD that you are intending to use as User Provisioned Infrastructure for OpenShift installation.
+ https://www.cisco.com/c/en/us/solutions/design-zone.html
 * VMware Infrastructure deployed on Cisco Converged Infrastructiure
-* terraform
+* terraform 0.11
 
 # OCP 4.3 Cluster Installation 
 
@@ -13,19 +16,19 @@ Terraform Installater for OpenShift COntainer Platform 4.3 on VMware deployed on
 
 ```
 apiVersion: v1
-baseDomain: devcluster.openshift.com
+baseDomain: devcluster.cisco-ci.com
 metadata:
   name: mstaeble
 networking:
   machineNetwork:
-  - cidr: "139.178.89.192/26"
+  - cidr: "x.x.x.x/26"
 platform:
   vsphere:
-    vCenter: vcsa.vmware.devcluster.openshift.com
+    vCenter: vcsa.devcluster.cisco-ci.com
     username: YOUR_VSPHERE_USER
     password: YOUR_VSPHERE_PASSWORD
     datacenter: dc1
-    defaultDatastore: nvme-ds1
+    defaultDatastore: Infra_datastore1
 pullSecret: YOUR_PULL_SECRET
 sshKey: YOUR_SSH_KEY
 ```
@@ -33,7 +36,7 @@ sshKey: YOUR_SSH_KEY
 2. Run `openshift-install create ignition-configs`.
 
 3. Fill out a terraform.tfvars file with the ignition configs generated.
-There is an example terraform.tfvars file in this directory named terraform.tfvars.example. The example file is set up for use with the dev cluster running at vcsa.vmware.devcluster.openshift.com. At a minimum, you need to set values for the following variables.
+There is an example terraform.tfvars file in this directory named terraform.tfvars.example. At a minimum, you need to set values for the following variables.
 * cluster_id
 * cluster_domain
 * vsphere_user
