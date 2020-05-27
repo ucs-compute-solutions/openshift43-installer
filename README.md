@@ -1,4 +1,4 @@
-# Terrafrom OpenShift Container Platform 4.3 Installater for Cisco UPI
+# Terraform OpenShift Container Platform 4.3 Installater for Cisco UPI
 
 Terraform Installater for OpenShift Container Platform 4.3 on Cisco User Provisioned Infrastructure 
 
