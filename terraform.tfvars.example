@@ -26,7 +26,7 @@ vsphere_datacenter = "dc1"
 vsphere_datastore = "nvme-ds1"
 
 // Name of the network to use for the VMs. The dev cluster uses "ocp-network".
-vsphere_datastore = "ocp-network"
+vm_network = "ocp-network"
 
 // Name of the VM template to clone to create VMs for the cluster. The dev cluster has a template named "rhcos-latest".
 vm_template = "rhcos-latest"
