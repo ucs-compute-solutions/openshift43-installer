@@ -1,6 +1,6 @@
-# Terraform OpenShift Container Platform 4.3 Installater for Cisco UPI
+# Terraform OpenShift Container Platform 4 Installer for Cisco UPI
 
-Terraform Installater for OpenShift Container Platform 4.3 on Cisco User Provisioned Infrastructure 
+Terraform Installater for OpenShift Container Platform 4 on Cisco User Provisioned Infrastructure 
 
 # Pre-Requisites
 
@@ -8,7 +8,7 @@ Terraform Installater for OpenShift Container Platform 4.3 on Cisco User Provisi
 * VMware Infrastructure deployed on Cisco Converged Infrastructiure
 * terraform 0.11
 
-# OCP 4.3 Cluster Installation 
+# OCP 4 Cluster Installation 
 
 Refer to specific Converged Infrastructure CVD that you are intending to use as User Provisioned Infrastructure for OpenShift installation.
  https://www.cisco.com/c/en/us/solutions/design-zone.html
